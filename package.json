@@ -14,12 +14,19 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/src/index.js",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/module-alias": "^2.0.4",
     "@types/node": "^25.5.0",
-    "typescript": "^5.9.3"
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
+    "eslint": "^10.0.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.0"
   },
   "dependencies": {
     "module-alias": "^2.3.4"
